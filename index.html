@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet"> 
-    <meta charset="utf-8">
-    <link href="styles/style.css" rel="stylesheet">
-    <title>My test page</title>
-  </head>
-  <body>
-    <h1>yo motherfucker</h1>
-    <img src="images/firefox-icon.png" alt="My test image">
-<p>At Mozilla, we’re a global community of</p>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="icon" href="favicon.ico" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+            rel="stylesheet"
+        />
+        <meta charset="utf-8" />
+        <link href="styles/style.css" rel="stylesheet" />
+        <title>Number guessing game</title>
+    </head>
 
-<ul>
-    <li><span>technologists</span></li>
-    <li><strong>thinkers<strong></li>
-    <li><em>builders</em></li>
-</ul>
+    <body>
+        <h1>Number guessing game</h1>
 
-<p>working together ... </p>
-<a href='http://google.com'>Mozilla Manifesto</a>
-<p>
-<button>Change user</button>
-<script src="scripts/main.js"></script>
-  </body>
+        <p>
+            We have selected a random number between 1 and 100. See if you can
+            guess it in 10 turns or fewer. We'll tell you if your guess was too
+            high or too low.
+        </p>
+
+        <div class="form">
+            <label for="guessField">Enter a guess: </label>
+            <input type="text" id="guessField" class="guessField" />
+            <input type="submit" value="Submit guess" class="guessSubmit" />
+        </div>
+
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
+
+        <a href="http:facebook.com/qvieth">follow me</a>
+        <script src="scripts/main.js"></script>
+    </body>
 </html>
